@@ -55,8 +55,8 @@ def to_iter(data, bs, device):
     Iterator = torchtext.data.Iterator
     it = Iterator(data, batch_size=bs, 
        device=device, batch_size_fn=None, 
-       train=False, repeat=False, sort=None, 
-       shuffle=None, reverse=False)
+       train=False, repeat=False, sort=False, 
+       shuffle=False, reverse=False)
 
     return it
 
